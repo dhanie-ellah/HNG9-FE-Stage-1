@@ -1,60 +1,60 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'inter';
 }
 
-body{
+body {
   padding: 75px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-.App{
-  width: 65%;
+.App {
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-header{
+header {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-header .share-icon{
+header .share-icon {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-header .share-icon img{
+header .share-icon img {
   width: 2.5%;
 }
 
-header .profile-image{
+header .profile-image {
   width: 10%;
   margin: auto;
 }
 
-header .profile-image img{
+header .profile-image img {
   width: 100%;
 }
 
-.links{
+.links {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.link{
+.link {
   background-color: #EAECF0;
   border-radius: 5px;
   text-align: center;
@@ -63,14 +63,14 @@ header .profile-image img{
   font-weight: 600;
 }
 
-.socials{
+.socials {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
 
-hr{
+hr {
   outline: none;
   border: none;
   height: 1px;
@@ -78,23 +78,12 @@ hr{
   margin: 15px 0;
 }
 
-footer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media(max-width: 1000px){
-  body{
+@media(max-width: 1000px) {
+  body {
     padding: 25px;
   }
 
-  .App{
+  .App {
     width: 100%;
-  }
-  footer{
-    flex-direction: column;
-    gap: 25px;
-    align-items: flex-start;
   }
 }

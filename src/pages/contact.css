@@ -1,0 +1,75 @@
+.contact{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact .inputs-wrapper{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.contact .inputs-wrapper .flex-inputs{
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.contact .inputs-wrapper label,
+.contact .inputs-wrapper p{
+  font-size: 12px;
+  color: #344054;
+  font-weight: 500;
+}
+.contact .inputs-wrapper input,
+.contact .inputs-wrapper textarea{
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  width: 100%;
+  resize: none;
+}
+.contact .inputs-wrapper input::placeholder{
+  font-size: 12px;
+  color: #667085;
+}
+.contact .inputs-wrapper .flex-inputs .first_name,
+.contact .inputs-wrapper .flex-inputs .last_name{
+  width: 50%;
+}
+.contact .inputs-wrapper .check{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contact .inputs-wrapper .check input{
+  width: auto;
+}
+.contact .inputs-wrapper input[type='submit']{
+  outline: none;
+  border: none;
+  background-color: #1570EF;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px){
+  .contact{
+    width: 100%;
+  }
+  .contact .inputs-wrapper{
+    width: 90%;
+  }
+  .contact .inputs-wrapper .flex-inputs{
+    flex-direction: column;
+  }
+  .contact .inputs-wrapper .flex-inputs .first_name,
+  .contact .inputs-wrapper .flex-inputs .last_name{
+    width: 100%;
+  }
+}

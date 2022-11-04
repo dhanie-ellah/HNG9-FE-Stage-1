@@ -1,4 +1,5 @@
 import React from 'react'
+import './footer.css'
 import zuriLogo from '../Assets/Zuri.Internship_Logo.png'
 import i4gLogo from '../Assets/I4G.png'
 
