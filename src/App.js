@@ -1,17 +1,19 @@
-import './App.css';
-import Footer from './components/footer'
-import Header from './components/header'
-import Body from './components/body'
-import Socials from './components/socials'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Contact from './pages/contact'
+import Home from './pages/home'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Body />
-      <Socials/>
-      <hr/>
-      <Footer/>
+      <>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/Contact" element={<Contact/>} />
+          </Routes>
+        </Router>
+      </>
     </div>
   );
 }
